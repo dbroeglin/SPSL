@@ -1,0 +1,9 @@
+TOPIC
+    about_SPSL
+
+SHORT DESCRIPTION
+    SPSL (Simple PowerShell Logger) is a a simple logger for PowerShell scripts.
+
+LONG DESCRIPTION
+    SPSL is a simple logger for PowerShell scripts that need to produce logs. It 
+    is highly configurable and abstracts away how the logs are stored or formatted.

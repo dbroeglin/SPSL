@@ -1,0 +1,23 @@
+{
+    "language": "en_US",
+    "ignoreWordsList": [
+        "prag",
+        "prog",
+        "ebuild",
+        "mybranch",
+        "NetScaler",
+        "PowerShell",
+        "Citrix",
+        "Nitro",
+        "inline",
+        "SPSL"
+    ],
+    "documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "ignoreRegExp": [],
+    "ignoreFileExtensions": [],
+    "checkInterval": 5000
+}
