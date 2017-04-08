@@ -13,12 +13,16 @@ function Get-Logger {
     #>
     [CmdletBinding()]
     Param(
-
+        [String]$File
     )
 
-    if (-not (Get-Variable -Scope Global -Name SPSLLogger -ErrorAction SilentlyContinue)) {
+    if (-not (Get-Variable -Scope Global -Name SPSLLogger -ErrorAction SilentlyContinue) -or 
+        $Null -eq $global:SPSLLogger) {
         $global:SPSLLogger = [Logger]::new()
-    } 
+        if ($File) {
+            $global:SPSLLogger.FilePath = $File
+        }
+    }
     
     $global:SPSLLogger
 }
